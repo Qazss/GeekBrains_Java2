@@ -1,0 +1,6 @@
+
+2019-06-24 22:51:37 DEBUG  [main] Server.MyServer (MyServer.java:35) - Address already in use: JVM_Bind
+2019-06-24 22:52:12 DEBUG  [main] Server.MyServer (MyServer.java:24) - Сервер запущен
+2019-06-24 22:53:09 DEBUG  [main] Server.MyServer (MyServer.java:35) - Address already in use: JVM_Bind
+2019-06-24 22:59:06 DEBUG  [main] Server.MyServer (MyServer.java:35) - Address already in use: JVM_Bind Address already in use: JVM_Bind
+2019-06-24 23:15:07 DEBUG  [main] Server.MyServer (MyServer.java:24) - Сервер запущен
