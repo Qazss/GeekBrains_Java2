@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?scenebuilder-stylessheet /css/Style.css?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<BorderPane fx:controller="Application.Controller" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.121">
+    <stylesheets><URL value="@/CSS/Style.css" /></stylesheets>
+    <top>
+        <HBox fx:id="authrizationPannel" visible="true">
+            <TextField fx:id="loginField" promptText="логин"/>
+            <PasswordField fx:id="passwordField" promptText="пароль" onAction="#tryToAuthorise"/>
+            <Button fx:id="authrize" text="Авторизоваться" onAction="#tryToAuthorise"/>
+        </HBox>
+    </top>
+    <center>
+        <ScrollPane>
+            <VBox fx:id="mainWindow" managed="false" visible="false"/>
+        </ScrollPane>
+    </center>
+    <bottom>
+        <HBox fx:id="messagePanel" managed="false" visible="false">
+            <TextField fx:id="messageWindow" onAction="#sendMessage" promptText="Введите сообщение ..." HBox.hgrow="ALWAYS" />
+            <Button fx:id="butSend" onAction="#sendMessage" text="Send" />
+        </HBox>
+    </bottom>
+</BorderPane>
+
+
